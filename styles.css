@@ -1,13 +1,20 @@
 * {
   font-family: Arial;
+  border: 2px solid red;
 }
 
 div.container {
   display: grid;
   /* grid-template-rows: 200px 600px 400px 300px 300px 400px 400px 100px; */
-  grid-template-rows: 0fr 300px 200px 8fr 6fr 8fr 6fr 2fr;
-  margin-left: 30px;
-  margin-right: 30px;
+  grid-template-rows: 0fr 350px 300px 1fr 1fr 4fr 3fr 1fr;
+  margin-left: 100px;
+  margin-right: 100px;
+  /* padding-left: 100px;
+  padding-right: 100px; */
+}
+
+div.container > * {
+  border: 2px dotted grey;
 }
 
 nav ul{
@@ -47,7 +54,7 @@ nav ul{
   font-weight: normal;
 }
 
-#quote {
+.quote {
 
   padding-top: 20px;
   display: flex;
@@ -57,23 +64,27 @@ nav ul{
   font-style: italic;
   /* TODO: Font to serif */
   font-family: "Times New Roman", Times, serif;
+
 }
 
-#quote blockquote {
-  margin-left: 425px;
-  margin-right: 425px;
+.quote blockquote {
+  margin-left: 300px;
+  margin-right: 300px;
   line-height: 200%;
   text-align: left;
+  flex-basis: 170px;
+
+  font-size: 20px;
+
 }
 
-#quote p {
+.quote p {
   text-align: right;
   padding-right: 100px;
+  /* TODO: Make 20px without causing weird cut off */
+  font-size: 18px;
 }
 
-#quote, #quote > * {
-  border: 1px solid blue;
-}
 
 #why {
   text-align: center;
@@ -92,12 +103,10 @@ nav ul{
   display: grid;
   grid-template-columns: 1fr 0.5fr 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
-  border: 1px solid blue;
+
 }
 
-#reasons li > * {
-  border: 1px solid blue;
-}
+
 
 #reasons img {
   grid-row-start: 1;
