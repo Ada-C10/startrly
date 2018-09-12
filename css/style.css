@@ -1,0 +1,40 @@
+* {
+  border: black 1px solid;
+}
+
+header {
+  width: 60vw;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  border-color: black;
+}
+
+li {
+  list-style: none;
+}
+
+#nav-Startrly {
+
+}
+
+#nav-Try {
+
+}
+
+#nav-About {
+
+}
+
+#top-banner {
+
+}
+
+main {
+  width: 100vw;
+  height: 900vh;
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
