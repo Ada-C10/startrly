@@ -1,11 +1,57 @@
 * {
-  border: 1px solid red;
+
+  font-family: Arial;
+}
+
+div.container {
+  display: grid;
+  /* grid-template-rows: 200px 600px 400px 300px 300px 400px 400px 100px; */
+  grid-template-rows: 0fr .5fr 4fr 3fr 3fr 4fr 3fr 1fr;
+  border: 1px solid blue;
+}
+
+div.container > section{
+  border: 1px solid blue;
 }
 
 nav ul{
   display: grid;
   grid-template-columns: 1fr 5fr 1fr 1fr;
+
   list-style-type: none;
   text-align: right;
+  padding-top: 10px;
+}
+
+#title {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 2fr 1fr 1fr;
+
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+
+
+
+}
+
+#title h1 {
+  font-size: 50px;
+}
+
+#title a {
+
+
+  margin-left: 39rem;
+  margin-right: 39rem;
+  padding-top: 1rem;
+
+  border: solid 2px grey;
+  border-radius: 10px;
+
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: normal;
 
 }
