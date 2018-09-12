@@ -6,7 +6,7 @@
 div.container {
   display: grid;
   /* grid-template-rows: 200px 600px 400px 300px 300px 400px 400px 100px; */
-  grid-template-rows: 0fr .5fr 4fr 3fr 3fr 4fr 3fr 1fr;
+  grid-template-rows: 0fr 300px 200px 8fr 6fr 8fr 6fr 2fr;
   border: 1px solid blue;
 }
 
@@ -45,7 +45,8 @@ nav ul{
 
   margin-left: 39rem;
   margin-right: 39rem;
-  padding-top: 1rem;
+  margin-bottom: 2rem;
+  padding-top: .5rem;
 
   border: solid 2px grey;
   border-radius: 10px;
@@ -53,5 +54,8 @@ nav ul{
   text-decoration: none;
   font-size: 18px;
   font-weight: normal;
+}
 
+#quote {
+  
 }
