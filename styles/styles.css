@@ -1,0 +1,25 @@
+.intro {
+  width: 100vw;
+  height: 40vh;
+  margin-top: 3vh;
+  margin-left: -3vh;
+ display: grid;
+}
+
+.intro ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+
+
+.intro h1 {
+   color: #BB8FCE;
+    display: flex;
+    justify-content: center;
+    font-size: 26pt;
+}
