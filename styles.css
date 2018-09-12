@@ -1,5 +1,4 @@
 * {
-
   font-family: Arial;
 }
 
@@ -7,11 +6,8 @@ div.container {
   display: grid;
   /* grid-template-rows: 200px 600px 400px 300px 300px 400px 400px 100px; */
   grid-template-rows: 0fr 300px 200px 8fr 6fr 8fr 6fr 2fr;
-  border: 1px solid blue;
-}
-
-div.container > section{
-  border: 1px solid blue;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 nav ul{
@@ -31,9 +27,6 @@ nav ul{
   text-align: center;
   font-size: 30px;
   font-weight: bold;
-
-
-
 }
 
 #title h1 {
@@ -41,8 +34,6 @@ nav ul{
 }
 
 #title a {
-
-
   margin-left: 39rem;
   margin-right: 39rem;
   margin-bottom: 2rem;
@@ -57,5 +48,29 @@ nav ul{
 }
 
 #quote {
-  
+
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  font-style: italic;
+  /* TODO: Font to serif */
+  font-family: "Times New Roman", Times, serif;
+}
+
+#quote blockquote {
+  margin-left: 425px;
+  margin-right: 425px;
+  line-height: 200%;
+  text-align: left;
+}
+
+#quote p {
+  text-align: right;
+  padding-right: 100px;
+}
+
+#quote, #quote > * {
+  border: 1px solid blue;
 }
