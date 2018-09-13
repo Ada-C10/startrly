@@ -83,17 +83,18 @@ nav ul{
 }
 /* Why -------------------------------------- */
 #why{
-  background-color: rgb(68, 205, 247);
+  /* background-color: rgb(68, 205, 247); */
   width: 100vw;
+  border-bottom: .5px solid gray;
 }
 
 #why > h2{
-  background-color: rgb(234, 236, 147);
+  /* background-color: rgb(234, 236, 147); */
   text-align: center;
 }
 
 #why ul{
-  background-color: green;
+  /* background-color: green; */
   /* width: 100vw; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -105,31 +106,31 @@ nav ul{
   list-style: none;
 }
 
-#first{
-  background-color: purple;
+.first{
+  /* background-color: purple; */
   width: 30vw;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-auto-rows: 1fr 1fr 1fr 1fr;
 }
 
-#first img{
+.first img{
   grid-column: 1/2;
   grid-row: 1/3;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   text-align: right;
 }
 
-#first strong{
+.first strong{
   grid-column: 2/4;
   grid-row: 1/2;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
-#first p{
+.first p{
   grid-column: 2/4;
   grid-row: 1/3;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin-top: 30px;
 }
 
