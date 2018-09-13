@@ -164,13 +164,55 @@ nav ul{
 
 /* Team ---------------------------------------- */
 #team > h2{
-  /* background-color: rgb(244, 141, 178); */
+  background-color: rgb(244, 141, 178);
+  text-align: center;
+}
+
+#team ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr
+}
+
+#team img{
+  border-radius: 50%;
 }
 
 #team li{
-  /* background-color: rgb(210, 170, 230); */
+  list-style-type: none;
 }
 
+#team li:first-of-type{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  border: 10px solid red;
+}
+
+#team li:nth-of-type(2){
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+#team li:nth-of-type(3){
+  grid-column: 6/7;
+  grid-row: 1/2;
+}
+
+#team li:nth-of-type(4){
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+#team li:nth-of-type(5){
+  grid-column: 5/6;
+  grid-row: 2/3;
+}
+
+#team li{
+  background-color: rgb(210, 170, 230);
+}
+
+/* Sponsors----------------------------------------- */
 #sponsors > h2{
   /* background-color: rgb(121, 236, 244); */
 }
