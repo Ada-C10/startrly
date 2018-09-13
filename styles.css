@@ -1,23 +1,23 @@
-* {
+body {
   font-family: Arial;
   /* border: 2px solid red; */
 }
 
+nav ul li:hover {
+  font-size: 20px;
+}
+
 div.container {
   display: grid;
-  /* grid-template-rows: 200px 600px 400px 300px 300px 400px 400px 100px; */
   grid-template-rows: 0fr 500px 300px 1fr 1fr 2fr 0.5fr;
   margin-left: 100px;
   margin-right: 100px;
-  /* padding-left: 100px;
-  padding-right: 100px; */
 }
 
 
 nav ul{
   display: grid;
   grid-template-columns: 1fr 5fr 1fr 1fr;
-
   list-style-type: none;
   text-align: right;
   padding-top: 10px;
@@ -28,18 +28,15 @@ nav ul{
   flex-direction: column;
   justify-content: space-between;
 
-
-
   text-align: center;
   font-size: 30px;
   font-weight: bold;
   border-bottom: solid 2px grey;
   padding-top: 100px;
   padding-bottom: 100px;
-
+  background-color: lavender;
+  border-radius: 50px;
 }
-
-
 
 #title h1 {
   font-size: 50px;
@@ -56,10 +53,8 @@ nav ul{
   margin-bottom: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-
   border: solid 2px grey;
   border-radius: 7px;
-
   text-decoration: none;
   font-size: 20px;
   font-weight: normal;
@@ -67,26 +62,23 @@ nav ul{
 
 .quote {
 
-  padding-top: 20px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
 
+  padding-top: 20px;
   font-style: italic;
-  /* TODO: Font to serif */
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Noto Serif KR', sans-serif;
   border-bottom: solid 2px grey;
-
 }
+
+
 
 section {
   border-bottom: 2px solid grey;
 }
-/*
-.quote > * {
-  border: solid 2px red;
-} */
+
 
 .quote blockquote {
   margin-left: 300px;
@@ -96,19 +88,14 @@ section {
   line-height: 200%;
   text-align: left;
   flex-basis: 170px;
-
   font-size: 20px;
-
 }
 
 .quote p {
   text-align: right;
   padding-right: 100px;
-
   margin-top: 0;
   margin-bottom: 0;
-
-  /* TODO: Make 20px without causing weird cut off */
   font-size: 18px;
 }
 
@@ -133,7 +120,6 @@ section {
   display: grid;
   grid-template-columns: 1fr 0.5fr 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
-
 }
 
 
@@ -182,10 +168,9 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 250px;
+  margin-right: 250px;
   padding-top: 100px;
-
 }
 
 #team ul li {
@@ -198,6 +183,8 @@ section {
   padding: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #team ul li img{
@@ -210,7 +197,6 @@ section {
 
 #team ul li > *{
   padding: 10px;
-
 }
 
 #sponsers {
@@ -228,6 +214,7 @@ section {
 
 .support-about {
   list-style-type: none;
+
 }
 
 #footer {
@@ -235,6 +222,7 @@ section {
   max-width: 700px;
   justify-content: space-around;
   border-bottom: none;
+  margin-top: 20px;
 }
 
 #footer ul {
