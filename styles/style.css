@@ -64,7 +64,7 @@ nav ul{
 
 /* Lorem ---------------------------------- */
 #lorem{
-  background-color: rgb(142, 213, 159);
+  /* background-color: rgb(142, 213, 159); */
   display: flex;
   width: 100vw;
   height: 60vh;
@@ -77,19 +77,67 @@ nav ul{
 }
 
 #lorem p{
-  color: blue;
+  /* color: blue; */
   margin-left: 70vw;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 /* Why -------------------------------------- */
+#why{
+  background-color: rgb(68, 205, 247);
+  width: 100vw;
+}
+
 #why > h2{
-  /* background-color: rgb(234, 236, 147); */
+  background-color: rgb(234, 236, 147);
+  text-align: center;
+}
+
+#why ul{
+  background-color: green;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+
 }
 
 #why li{
-  /* background-color: rgb(246, 203, 75); */
+  list-style: none;
 }
 
+#first{
+  background-color: red;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: 1fr 1fr 1fr;
+}
+
+#first img{
+  grid-column: 1/2;
+  grid-row: 1/4;
+  border: 1px solid black;
+  text-align: right;
+}
+
+#first strong{
+  grid-column: 2/4;
+  grid-row: 1/2;
+  border: 1px solid black;
+}
+
+#first p{
+  grid-column: 2/4;
+  grid-row: 2/4;
+  border: 1px solid black;
+}
+
+#second{
+  background-color: orange;
+}
+
+#third{
+  background-color: yellow;
+}
+/* Nemo ------------------------------------- */
 #nemo{
   /* background-color: rgb(241, 155, 106); */
 }
