@@ -1,0 +1,110 @@
+/* Navigation bar ----------------------------*/
+nav{
+  /* background-color: rgb(135, 114, 166); */
+}
+
+nav ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr
+}
+
+#navigation > li:first-of-type{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#navigation > li:nth-of-type(2){
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+#navigation > li:nth-of-type(3){
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+#navigation > li{
+  list-style-type: none;
+  /* border: 1px solid black; */
+  text-align: center;
+}
+
+/* Greeting --------------------------- */
+#greeting{
+  background-color: rgb(151, 185, 204);
+  display: flex;
+  width: 100vw;
+  height: 60vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: sans-serif;
+  border-bottom: .5px solid gray;
+}
+
+#greeting > h1{
+  font-size: 2em;
+  margin-bottom: -80px;
+}
+
+#greeting > sub{
+  font-size: 1.5em;
+}
+
+#greeting > a{
+  margin-top: -80px;
+  border: .75px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Lorem ---------------------------------- */
+#lorem{
+  background-color: rgb(142, 213, 159);
+  display: flex;
+  width: 100vw;
+  height: 60vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  font-size: 1.25em;
+  border-bottom: .5px solid gray;
+}
+
+
+/* Why -------------------------------------- */
+#why > h2{
+  /* background-color: rgb(234, 236, 147); */
+}
+
+#why li{
+  /* background-color: rgb(246, 203, 75); */
+}
+
+#nemo{
+  /* background-color: rgb(241, 155, 106); */
+}
+
+#team > h2{
+  /* background-color: rgb(244, 141, 178); */
+}
+
+#team li{
+  /* background-color: rgb(210, 170, 230); */
+}
+
+#sponsors > h2{
+  /* background-color: rgb(121, 236, 244); */
+}
+
+#sponsors li{
+  /* background-color: rgb(134, 238, 177); */
+}
+
+#footer{
+  /* background-color: rgb(237, 240, 121); */
+}
