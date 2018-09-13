@@ -164,7 +164,7 @@ nav ul{
 
 /* Team ---------------------------------------- */
 #team > h2{
-  background-color: rgb(244, 141, 178);
+  /* background-color: rgb(244, 141, 178); */
   text-align: center;
 }
 
@@ -180,12 +180,14 @@ nav ul{
 
 #team li{
   list-style-type: none;
+  text-align: center;
 }
 
 #team li:first-of-type{
   grid-column: 2/3;
   grid-row: 1/2;
-  border: 10px solid red;
+  /* border: 10px solid red; */
+
 }
 
 #team li:nth-of-type(2){
@@ -208,9 +210,12 @@ nav ul{
   grid-row: 2/3;
 }
 
-#team li{
-  background-color: rgb(210, 170, 230);
+#first_team span:nth-of-type(1){
+  color: red;
+  /* content: "\A"; */
 }
+
+
 
 /* Sponsors----------------------------------------- */
 #sponsors > h2{
