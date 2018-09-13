@@ -41,19 +41,20 @@ nav ul{
   justify-content: space-around;
   font-family: sans-serif;
   border-bottom: .5px solid gray;
+  flex-wrap: wrap;
 }
 
 #greeting > h1{
   font-size: 2em;
-  margin-bottom: -80px;
+  margin-bottom: -100px;
 }
 
 #greeting > sub{
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 #greeting > a{
-  margin-top: -80px;
+  margin-top: -100px;
   border: .75px solid black;
   padding: 10px;
   border-radius: 5px;
@@ -75,7 +76,11 @@ nav ul{
   border-bottom: .5px solid gray;
 }
 
-
+#lorem p{
+  color: blue;
+  margin-left: 70vw;
+  border: 1px solid black;
+}
 /* Why -------------------------------------- */
 #why > h2{
   /* background-color: rgb(234, 236, 147); */
