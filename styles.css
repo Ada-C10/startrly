@@ -1,0 +1,161 @@
+body {
+  font-family: sans-serif;
+}
+
+body > div {
+  display: grid;
+  /* grid-template-rows: 5em 1.5fr 1.5fr 1fr 1fr 2fr 1fr 5em; */
+  grid-template-columns: 100%;
+}
+
+section h2 {
+  text-align: center;
+  margin: 5%;
+}
+
+section + section::before {
+  content: '';
+  display: block;
+  margin-left: 2%;
+  width: 96%;
+  height: 2px;
+  background-color: darkgrey;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Nav */
+nav ul {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+}
+nav li {
+  padding: 2em 4em;
+}
+
+/* Intro section */
+.intro {
+  margin: 10% 0;
+}
+
+.intro > * {
+  display: block;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 4em;
+}
+.intro sub {
+  font-size: 2em;
+  margin-bottom: 3em;
+}
+
+.intro a {
+  font-size: 2em;
+  color: black;
+  text-decoration: none;
+
+  background-color: white;
+  padding: 20px;
+
+  border-radius: 10px;
+  border-color: darkgrey;
+  border-width: 2px;
+  border-style: solid;
+}
+
+/* Quote section */
+.quote {
+  font-size: 1.5em;
+  font-style: italic;
+  font-family: serif;
+  line-height: 2em;
+
+}
+
+.quote blockquote {
+  margin: 10% 10% 0;
+}
+
+.quote blockquote::before, .quote blockquote::after {
+  content: "\"";
+}
+
+.quote p {
+  text-align: right;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+
+.quote p::before {
+  content: "--";
+}
+
+
+/* Why section */
+.why ul {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+.why li {
+  width: 25%;
+}
+
+.why img {
+  float: left;
+  padding-right: 10px;
+}
+
+
+/* Team section */
+.team ul {
+  margin: 5%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team li {
+  margin: 0 8%;
+}
+
+.team img {
+  display: block;
+  padding: 5px;
+  background-color: white;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: darkgrey;
+}
+
+.team span {
+  margin: 1em;
+  display: block;
+  text-align: center;
+}
+
+/* Sponsors section */
+.sponsors ul {
+  margin-bottom: 10%;
+  /* Flexbox stuff */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Footer */
+.footer > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 2% 5%;
+}
