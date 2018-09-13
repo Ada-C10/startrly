@@ -1,6 +1,6 @@
 * {
   font-family: Arial;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 div.container {
@@ -135,16 +135,26 @@ nav ul{
 
 }
 
+
+#team {
+  padding-top: 70px;
+}
+
+
 #team h2 {
   text-align: center;
+
 }
 
 #team ul{
+  grid-row: 2 span 3;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-left: 300px;
   margin-right: 300px;
+  padding-top: 100px;
 
 }
 
