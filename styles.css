@@ -69,7 +69,7 @@ nav ul{
 
   padding-top: 20px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
 
@@ -91,6 +91,8 @@ section {
 .quote blockquote {
   margin-left: 300px;
   margin-right: 300px;
+  margin-top: 0;
+  margin-bottom: 0;
   line-height: 200%;
   text-align: left;
   flex-basis: 170px;
@@ -102,6 +104,9 @@ section {
 .quote p {
   text-align: right;
   padding-right: 100px;
+
+  margin-top: 0;
+  margin-bottom: 0;
 
   /* TODO: Make 20px without causing weird cut off */
   font-size: 18px;
@@ -229,6 +234,7 @@ section {
   display: flex;
   max-width: 700px;
   justify-content: space-around;
+  border-bottom: none;
 }
 
 #footer ul {
