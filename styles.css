@@ -13,9 +13,6 @@ div.container {
   padding-right: 100px; */
 }
 
-div.container > * {
-  border: 2px dotted grey;
-}
 
 nav ul{
   display: grid;
@@ -27,30 +24,44 @@ nav ul{
 }
 
 #title {
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 2fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
 
   text-align: center;
   font-size: 30px;
   font-weight: bold;
+  border-bottom: solid 2px grey;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
 }
+
+
 
 #title h1 {
   font-size: 50px;
 }
 
+#title sub {
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+
 #title a {
-  margin-left: 39rem;
-  margin-right: 39rem;
+  margin-left: 37rem;
+  margin-right: 37rem;
   margin-bottom: 2rem;
-  padding-top: .5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
   border: solid 2px grey;
-  border-radius: 10px;
+  border-radius: 7px;
 
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: normal;
 }
 
@@ -58,14 +69,24 @@ nav ul{
 
   padding-top: 20px;
   display: flex;
+  justify-content: flex-start;
   flex-wrap: wrap;
   flex-direction: column;
 
   font-style: italic;
   /* TODO: Font to serif */
   font-family: "Times New Roman", Times, serif;
+  border-bottom: solid 2px grey;
 
 }
+
+section {
+  border-bottom: 2px solid grey;
+}
+/*
+.quote > * {
+  border: solid 2px red;
+} */
 
 .quote blockquote {
   margin-left: 300px;
@@ -81,6 +102,7 @@ nav ul{
 .quote p {
   text-align: right;
   padding-right: 100px;
+
   /* TODO: Make 20px without causing weird cut off */
   font-size: 18px;
 }
