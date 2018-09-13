@@ -1,0 +1,81 @@
+* {
+  font-family: 'Nunito Sans', sans-serif;;
+  /* border: solid lightpink 1px; */
+}
+.navigation ul {
+    display: flex;
+    /* background-color: lightblue; */
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+    /* flex-grow: 2; */
+
+}
+
+.navigation li:first-child {
+    justify-content: flex-start;
+    flex-grow: 1;
+    font-weight: bolder;
+}
+
+.navigation li:nth-child(2) {
+    justify-content: flex-start;
+    flex-grow: .25;
+    font-weight: bolder;
+}
+
+.navigation li:nth-child(2) {
+    align-self: flex-end;
+    font-weight: bolder;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bolder;
+  font-weight: 800;
+
+}
+
+.title sub{
+   font-weight: bold;
+   font-size: 18px;
+   padding-bottom: 18px;
+   /* background-color: lightgrey */
+}
+
+.title a{
+    color: grey;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 7px 7px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 15px;
+}
+.title {
+  padding-top: 50px;
+    padding-bottom: 75px;
+  }
+.title {
+    border-bottom: 1px solid lightgrey;
+
+}
+
+.quote {
+  font-style: italic;
+  quotes: '"' '"' "'" "'";
+}
+.quote::before {
+  content: open-quote;
+}
+.quote::after {
+  content: close-quote;
+}
+
+.quote p {
+  font-style: italic;
+}
