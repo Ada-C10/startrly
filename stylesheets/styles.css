@@ -1,11 +1,11 @@
-* {
+/* * {
   border: black 1px solid;
-}
-
-/* body {
-  max-width: 75rem;
-  max-height: 50rem;
 } */
+
+body {
+  max-width: 75rem;
+  max-height: 100rem;
+}
 
 .container {
   display: grid;
@@ -207,7 +207,7 @@ h2 {
 
 .meet {
   display: grid;
-  grid-template: 10% 90% /25% 50% 25%;
+  grid-template: 10% 90% /23% 50% 27%;
   min-height: 400px;
 }
 
@@ -260,34 +260,31 @@ h2 {
 }
 
 footer {
-  background-color: lightgray;
+  background-color: gray;
   display: grid;
-  grid-template: 100% /25% 25% 50%;
-  min-height: 50px;
-  color: indigo;
+  grid-template: 100% /13% 12% 12% 13% 50%;
+  color: white;
 }
 
 
-footer div:nth-of-type(1) {
-  grid-row: 1/1;
-  grid-column: 1/2;
-}
-
-footer div:nth-of-type(2) {
+footer div:nth-of-type(1) h3 {
   grid-row: 1/1;
   grid-column: 2/3;
 }
 
-footer div h3 {
-  display: flex;
-  justify-content: left;
+footer div:nth-of-type(1) ul {
+  grid-row: 1/1;
+  grid-column: 1/3;
+  text-align: left;
 }
 
-footer div ul li {
-  font-size: 0.75rem;
-  display: flex;
-  justify-content: flex-start;
+footer div:nth-of-type(2) h3 {
+  grid-row: 1/1;
+  grid-column: 4/5;
 }
 
-
-/* font-family: 'Shadows Into Light', sans-serif; */
+footer div:nth-of-type(2) ul {
+  grid-row: 1/1;
+  grid-column: 3/5;
+  text-align: left;
+}
