@@ -11,17 +11,12 @@ section {
   border-top: 1px solid lightgray;
 }
 
-.navigation{
-  border: 1px blue dashed;
-}
 
 ul {
     list-style-type: none;
 }
 
 body .navigation > ul {
-  /* grid-column: 1 / 2;
-  grid-row: 1 / 2; */
   padding: 10px;
   font-size: 1.2em;
   display: flex;
@@ -39,7 +34,7 @@ body {
 
 .intro{
   text-align: center;
-  border: 1px red dashed;
+
 }
 
 .intro h1{
@@ -80,7 +75,7 @@ body {
 }
 
 .quote {
-  background-color: peachpuff;
+  /* background-color: peachpuff; */
   font-style: italic;
   padding-left: 100px;
   padding-right: 100px;
@@ -89,7 +84,7 @@ body {
 }
 
 .quote p {
-  border: dashed pink;
+  /* border: dashed pink; */
   text-align: right;
 }
 
