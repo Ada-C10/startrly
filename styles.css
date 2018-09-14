@@ -26,7 +26,15 @@ section h1:hover {
 
 li {
     list-style-type: none;
+    margin:0;
+    padding:0;
   }
+
+/* ul {
+  list-style-type: none;
+  margin:0;
+  padding:0; */
+}
 /* .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
@@ -73,14 +81,16 @@ li {
           } */
 
 
+
+
 .container {
 border: 3px solid #ffcc5c;
 display: flex;
-height: 80%;
-flex-direction: row;
+/* height: 30%; */
+/* flex-direction: ; */
   }
 
-.container > li {
+li.container {
   list-style-type: none;
       margin: 0;
       padding: 0;
