@@ -1,0 +1,300 @@
+body {
+  margin: 10px;
+  padding: 5px;
+  display: grid;
+  grid-template-rows: repeat(8, 200px);
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  grid-template-areas:
+  "Header "
+  "Intro"
+  "Quote"
+  "Why"
+  "Quote2"
+  "Team"
+  "Sponsors"
+  "Footer footer";
+  background-image: url("../images/2.jpg");
+}
+
+* {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.008em;
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  grid-row-start: 1;
+}
+
+nav ul {
+  grid-area: Header;
+  list-style-type: none;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  color: #F5DEB3;
+}
+
+nav ul li{
+  background-color: rgba(0, 0, 0, 0.1);
+  background: #F5DEB3
+  border: 1px solid #F5DEB3;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+
+li#try-now{
+  margin-left: 60%;
+  padding-right: 5px;
+}
+
+li#about{
+  padding-right: 35px;
+}
+
+.head-title{
+  grid-area: Intro;
+  display: flex;
+  flex-direction: column;
+  margin-left:-30px;
+  margin-right:-30px;
+  width: 100%;
+  height: 190px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 150px;
+  background-image: url("../images/5.jpg");
+  background-size: cover;
+}
+
+
+.head-title h1 {
+  margin-left: 190px;
+  margin-right: auto;
+  text-align: center;
+  background-color: #F5DEB3;
+  color: black;
+  font-size: 4em;
+}
+
+.head-title h1:hover {
+  color: grey;
+}
+.head-title sub {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 1.4em;
+  padding-bottom: 20px;
+  color: black;
+  background-color: #F5DEB3;
+  padding: 18px;
+
+}
+
+.head-title a {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  text-decoration: none;
+  color: black;
+  background-color: #F5DEB3;
+  padding: 5px;
+  text-align: center;
+  background: #F5DEB3
+  border: 1px solid #F5DEB3;
+}
+
+.quote {
+  grid-area: Quote;
+  font-style: italic;
+  border-bottom: 1px solid #F5DEB3;
+  border-top: 1px solid #F5DEB3;
+  padding: 30px 30px 10px 30px !important;
+  margin-left:-30px;
+  margin-right:-30px;
+  color: #F5DEB3;
+  background-color: rgba(0, 0, 0, 0.5);
+
+
+}
+
+.quote p {
+  text-align: right;
+}
+
+.quote p::before {
+  content: "--";
+}
+
+section blockquote {
+  line-height: 2.5;
+}
+section blockquote::before {
+  content: "''";
+}
+section blockquote::after {
+  content: "''";
+}
+
+
+.why {
+  grid-area: Why;
+  padding: 10px 30px 10px 30px !important;
+  margin-left:-30px;
+  margin-right:-30px;
+  color: #F5DEB3;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.why h2 {
+  display: grid;
+  grid-template-rows: auto;
+  text-align: center;
+  color: black;
+  background-color: #F5DEB3;
+  weight: 10em
+}
+
+.why ul {
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+  list-style-type: none;
+  grid-gap: 90px;
+  margin-top: 30px;
+}
+
+li.because {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 10% 80% 10%;
+  grid-gap: 10px;
+}
+
+li.because img {
+  grid-row: 1 / span 2;
+  border: #F5DEB3 2px solid;
+}
+
+li.because p {
+  grid-row: 2 / span 2;
+}
+
+
+.team {
+  grid-area: Team;
+  padding: 10px 30px 10px 30px !important;
+  margin-left:-30px;
+  margin-right:-30px;
+  color: #F5DEB3;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.team h2 {
+  color: black;
+  background-color: #F5DEB3;
+  text-align: center;
+}
+
+.team ul {
+  text-align: center;
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(60px, 1fr));
+  list-style-type: none;
+  grid-gap: 20px;
+}
+
+.team li {
+  display: grid;
+  grid-template-rows: 6fr 1fr 1fr;
+  justify-content: center;
+  grid-row-gap: 10px;
+}
+
+.team li img {
+  border-radius: 90px;
+  border: black 5px double;
+  background: #F5DEB3
+}
+
+li.kari {
+  grid-column: 1
+}
+
+li.dan {
+  grid-column: 3
+}
+
+li.chris {
+  grid-column: 5
+}
+
+li.charles {
+  grid-column: 2
+}
+
+li.dee {
+  grid-column: 4
+}
+
+.sponsors {
+  grid-area: Sponsors;
+  padding: 10px 30px 10px 30px !important;
+  margin-left:-30px;
+  margin-right:-30px;
+  color: #F5DEB3;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sponsors h2 {
+  color: black;
+  background-color: #F5DEB3;
+  text-align: center;
+}
+
+.sponsors ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sponsors ul li {
+  align-self: left;
+}
+
+.sponsors img {
+  border: black 5px double;
+  background: #F5DEB3
+}
+
+.footer {
+  grid-area: Footer;
+  display: flex;
+  flex-direction: row;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #F5DEB3;
+}
+
+.footer div {
+  margin-left: 50px;
+  width: 15%;
+  flex-wrap: nowrap;
+
+}
+.footer div ul {
+  list-style-type: none;
+  margin-left: -40px;
+}
