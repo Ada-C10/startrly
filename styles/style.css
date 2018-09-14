@@ -42,8 +42,10 @@ nav ul{
 }
 
 #greeting > h1{
-  font-size: 2em;
+  font-size: 3em;
   margin-bottom: -100px;
+  font-family: 'Courgette', cursive;
+  letter-spacing: 1px;
 }
 
 #greeting > sub{
