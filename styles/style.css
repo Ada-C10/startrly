@@ -210,11 +210,9 @@ nav ul{
   grid-row: 2/3;
 }
 
-#first_team span:nth-of-type(1){
-  color: red;
-  /* content: "\A"; */
+.profile_pic span{
+  display: block;
 }
-
 
 
 /* Sponsors----------------------------------------- */
