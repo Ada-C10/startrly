@@ -275,9 +275,11 @@ ul.why-pictures-box p {
   list-style: none;
   display: grid;
   grid-template-rows: 125px 100px;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   margin: 0;
-  padding: 0;
+  padding-left: 100px;
+  padding-right: 100px;
   align-content: space-between;
 }
 
@@ -287,6 +289,7 @@ ul.why-pictures-box p {
 
 .content-sponsors li:last-of-type {
   grid-row: 2;
+  grid-column: span 4;
 }
 
 /* content-footer*/
