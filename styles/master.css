@@ -42,14 +42,14 @@ section h3 {
   width: 20%;
   color: white;
   border: 5px dashed lightblue;
-background-color:#a80080;
+  background-color:#a80080;
   justify-self: center;
 }
 
 .header #button:hover {
   color: magenta;
   background-color: #BBFFFF;
-  box-shadow:  0 0 20px black,
+  box-shadow: 0 0 20px black,
   20px 15px 30px yellow,
   -20px 15px 30px lime,
   -20px -15px 30px blue,
@@ -71,6 +71,9 @@ background-color:#a80080;
 
   position: fixed;
   width: 100%;
+}
+.nav-bar > li:nth-child(2)::after{
+  content: "🤔"
 }
 
 .nav-bar > li:nth-child(1){
@@ -120,21 +123,25 @@ blockquote::selection {
   padding: 0.5em;
 }
 
-.team-section{
+.team-section {
   display: grid;
   grid-template-rows: repeat(2, 50%);
 }
 
-.team-list {
+.team-section ul {
   border-bottom: none;
   display: flex;
   justify-content: space-around;
   justify-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .team-section img {
   border-radius: 50%;
+}
+
+.team-section li {
+  margin: 2em;
 }
 
 .sponsor-section {
@@ -152,7 +159,7 @@ blockquote::selection {
 }
 
 .sponsor-list img {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .footer {
