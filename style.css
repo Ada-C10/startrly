@@ -1,0 +1,245 @@
+/* * {
+  border: solid rgba(125,119,120,.82);
+  border-width: thin;
+} */
+
+.page {
+  width: 95vw;
+  padding: 20px;
+  font-family: 'Tenor Sans', sans-serif;
+}
+
+.nav ul {
+  display: grid;
+  grid-template-columns: 75% 20% 5%;
+  list-style-type: none;
+  position: fixed;
+  top: 0;
+  width: 90vw;
+}
+
+.tagline {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+  border-bottom-width: thin;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+#catchy-line {
+  font-weight: bolder;
+  font-size: 1.0rem;
+  padding-top: 10px;
+  padding-bottom: 35px;
+}
+
+.tagline #link {
+  background-color: white;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: lightgray;
+  padding: 10px;
+  border-width: thin;
+  text-decoration: none;
+  color: black;
+}
+
+.tagline #link:hover {
+  background-color: rgb(215,200,179);
+}
+
+.lorem-ipsum {
+  display: flex;
+  justify-content: center;
+  line-height: 200%;
+  padding: 100px 250px 20px 250px;
+  font-style: italic;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.mr-lorem {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  padding-right: 300px;
+  font-style: italic;
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+  border-bottom-width: thin;
+  padding-bottom: 70px;
+}
+
+h2 {
+  padding-top: 70px;
+  text-align: center;
+}
+
+.three-whys {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 70px;
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+  border-bottom-width: thin;
+  padding-bottom: 70px;
+}
+
+.three-whys img {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+ul strong {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bolder;
+
+}
+
+#comfortable {
+  margin-right: 50px;
+}
+
+#robust {
+  margin-left: 30px;
+  margin-right: 90px;
+}
+
+#convenient {
+  margin-right: 70px;
+}
+
+
+.teams {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-top: 50px;
+  padding-left: 255px;
+  padding-right: 255px;
+}
+
+.teams img {
+  border-radius: 50%;
+  border-width: thin;
+  border-color: lightgray;
+  border-style: solid;
+  padding: 5px;
+}
+
+#kari {
+  margin-right: 90px;
+}
+
+#dan {
+  margin-right: 20px;
+}
+
+#chris {
+  margin-left: 70px;
+}
+
+#charles, #dee {
+  padding-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+ul span {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.sponsors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+  border-bottom-width: thin;
+  padding-bottom: 70px;
+}
+
+.sponsors img {
+  margin: 5px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: rgb(215,200,179);
+}
+.support li {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.about li {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.support {
+  margin-left: 35px;
+}
+
+.support h3 {
+  text-align: right;
+}
+
+.about {
+  margin-left: 150px;
+}
+.about h3 {
+  text-align: center;
+}
+
+#sponsor-one {
+  width: 300px;
+  height: 100px;
+}
+
+#sponsor-two {
+  width: 250px;
+  height: 125px;
+}
+
+#sponsor-three {
+  width: 275px;
+  height: 70px;
+}
+
+#sponsor-four {
+  width: 250px;
+  height: 120px;
+}
+
+#sponsor-five {
+  width: 220px;
+  height: 100px;
+}
