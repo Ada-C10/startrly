@@ -1,0 +1,10 @@
+
+/* li {
+  color: yellow;
+  font-family: helvetica, sans-serif;;
+} */
+
+
+section h1:hover {
+  color:teal;
+}
