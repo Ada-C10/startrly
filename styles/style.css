@@ -5,6 +5,7 @@ body div {
   /* grid-template-columns: 1fr 1fr 1fr; */
   grid-template-rows: 11fr 44fr 34fr 39fr 34fr 66fr 46fr 20fr;
   font-family: 'Open Sans', sans-serif;
+  background-color: aliceblue;
 }
 
 nav {
@@ -26,8 +27,13 @@ nav ul {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+nav li:first-child {
+  margin-left: 25px;
+}
+
 nav li:last-child {
   grid-column-start: 5;
+  margin-right: 25px;
 }
 
 nav li:nth-child(2) {
@@ -133,8 +139,8 @@ nav li:nth-child(2) {
 
 .quote {
   grid-row-start: 3;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
+  border-top: 1px solid darkslategray;
+  border-bottom: 1px solid darkslategray;
   margin-left: 15px;
   margin-right: 15px;
   display: flex;
@@ -182,7 +188,7 @@ blockquote + p::before {
   margin-top: 60px;
   margin-left: 15px;
   margin-right: 15px;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid darkslategray;
 }
 
 .why .container {
@@ -219,7 +225,7 @@ blockquote + p::before {
 
 .second-quote {
   grid-row-start: 5;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid darkslategray;
   margin-left: 15px;
   margin-right: 15px;
   margin-top: 10px;
@@ -273,8 +279,8 @@ blockquote + p::before {
 
 .team img {
   border-radius: 50%;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
   padding: 5px;
   border: 2px solid lime;
 }
@@ -284,7 +290,7 @@ blockquote + p::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid darkslategray;
   margin-left: 15px;
   margin-right: 15px;
 }
@@ -307,6 +313,7 @@ blockquote + p::before {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  margin-top: 20px;
 }
 
 .footer ul {
@@ -316,7 +323,7 @@ blockquote + p::before {
 .support {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   margin-left: 8%;
 }
 
@@ -328,10 +335,9 @@ blockquote + p::before {
 .about {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-left: 14%;
-  margin-top: -21px;
 }
 
 .about ul {
