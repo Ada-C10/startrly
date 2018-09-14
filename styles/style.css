@@ -15,6 +15,11 @@ h2, h3 {
   text-align: center;
 }
 
+h2 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -139,10 +144,29 @@ a:visited {
 
 .why ul{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
   padding-left: 0;
-  /* grid-gap: 3em; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-auto-flow: dense;
+  grid-gap: 3em;
+  grid-template-areas:
+    "o t h";
+}
+
+.why img {
+  margin-right: 1em;
+}
+
+.comfortable {
+  grid-area: o;
+}
+
+.robust {
+  grid-area: t;
+}
+
+.convenient {
+  grid-area: h;
 }
 
 .why ul li {
@@ -151,10 +175,6 @@ a:visited {
 
 .why ul li img {
   float: left;
-}
-
-strong {
-  padding-left: 1em;
 }
 
 strong::after {
