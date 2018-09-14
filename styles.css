@@ -1,0 +1,161 @@
+/* navigation bar */
+
+nav ul{
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr 1fr;
+  list-style-type: none;
+  text-align: right;
+  padding-top: 10px;
+}
+
+/* top of page */
+
+.top {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 80px);
+  grid-gap: 1px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.tagline {
+  color: lavender;
+  font-size: 20px;
+}
+
+/* first quote area */
+
+.quote {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 25px);
+  text-align: center;
+  flex-wrap: wrap;
+  font-style: italic;
+}
+
+.quote blockquote:before, .quote blockquote:after {
+  content: '"';
+}
+.quote p:before {
+ content: "--";
+}
+
+
+/* why? area */
+
+.container {
+  text-align: center;
+}
+#ul_group li{
+  display: inline-block;
+  list-style-type:none;
+  text-align: right;
+
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+/* second quote section */
+
+.quote-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 25px);
+  text-align: center;
+  flex-wrap: wrap;
+  font-style: italic;
+}
+.quote-two blockquote:before, .quote-two blockquote:after {
+  content: '"';
+}
+.quote-two p:before {
+ content: "--";
+}
+
+/* meet the team */
+
+.team {
+  white-space: wrap;
+  text-align: center
+}
+.team li {
+  display: inline-block;
+}
+.team img {
+  border-radius: 50%;
+
+}
+/* Sponsors */
+
+
+/* support navigation */
+
+/* fun css */
+
+a:hover {
+  background-color: aqua
+}
+
+.container {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+/*  Change this stuff:  */
+/*   justify-content: ; */
+/*   align-items: ; */
+}
+
+
+
+
+/* Everything below this comment is stuff to make it easier to look at, shouldn't need altering */
+
+.sponsor{
+  border: blue 2px dotted;
+  max-height: 200px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sponsor>ul {
+  min-width: 50px;
+  min-height: 50px;
+  border: lightblue 2px solid;
+}
+
+.sponsor>ul:nth-child(2n) {
+  width: 70px;
+}
+.sponsor>ul:nth-child(2n+1) {
+  width: 52px;
+}
+.sponsor>ul:nth-child(10n) {
+  width: 260px;
+}
+.sponsor>ul:nth-child(3n) {
+  height: 73px;
+}
+.sponsor>ul:nth-child(3n+1) {
+  height: 53px;
+}
+.sponsor>ul:nth-child(3n+2) {
+  height: 65px;
+}
+
+body {
+  font-family: 'helvetica', 'arial', sans-serif;
+  text-align: center;
+}
