@@ -1,25 +1,166 @@
-.intro {
-  width: 100vw;
-  height: 40vh;
-  margin-top: 3vh;
-  margin-left: -3vh;
- display: grid;
+
+/* The first wrapper, it's a grid of some flex boxes and other stuff */
+.wrapper_1 {
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 1/4;
+  border-bottom: 1px solid black;
+  padding-bottom: 8em;
 }
 
-.intro ul {
+.wrapper_1 ul {
+   display: flex;
+   list-style-type: none;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   font-size: 10pt;
+   padding-right: 3em;
+}
+
+.wrapper_1 li:nth-child(2) {
+  position: relative;
+  right: -70px;
+}
+
+.wrapper_1 h1 {
+  font-family: : Arial;
+  text-align: center;
+  padding: 5px;
+  font-size: 20pt;
+}
+
+.wrapper_1 sub {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  list-style-type: none;
-  font-size: 10pt;
+  position: relative;
+  margin: 3px;
+  right: -30%;
+  padding: -7px;
+  font-size: 12pt;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
+.wrapper_1 a {
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
+  text-decoration: none;
+}
 
+/* The second wrapper, quote */
+.wrapper_2 {
+  display: grid;
+  padding-bottom: 4em;
+  padding-top: 4em;
+  border-bottom: 1px solid black;
+}
 
-.intro h1 {
-   color: #BB8FCE;
-    display: flex;
-    justify-content: center;
-    font-size: 26pt;
+.wrapper_2 blockquote {
+  display: flex;
+  flex-wrap: nowrap;
+  font-family: Georgia, serif;
+  line-height: 1.3;
+  font-size: 14px;
+  font-style: italic;
+  width: 500px;
+  margin: 0.25em 0;
+  padding: 0.35em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 5em;
+}
+
+.wrapper_2 blockquote:before {
+  content: open-quote;
+}
+
+.wrapper_2 blockquote:after {
+  content: close-quote;
+}
+
+.wrapper_2 p {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3em;
+  font-family: Georgia, serif;
+  line-height: 1.3;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* the third wrapper, bunch of images */
+.wrapper_3 {
+  display: grid;
+  border-bottom: 1px solid black;
+}
+
+.wrapper_3 h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  padding-top: 2em;
+}
+
+.wrapper_3 ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: stretch;
+  align-items: center;
+  font-size: 10pt;
+  padding-right: 3em;
+}
+
+.wrapper_3 img {
+  justify-content: space-around;
+  float: left;
+  height: 100px;
+  width: 30%;
+}
+
+/* the fourth wrapper, quote */
+
+.wrapper_4 {
+  display: grid;
+  padding-bottom: 4em;
+  padding-top: 4em;
+  border-bottom: 1px solid black;
+}
+
+.wrapper_4 blockquote {
+  display: flex;
+  flex-wrap: nowrap;
+  font-family: Georgia, serif;
+  line-height: 1.3;
+  font-size: 14px;
+  font-style: italic;
+  width: 500px;
+  margin: 0.25em 0;
+  padding: 0.35em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 5em;
+}
+
+.wrapper_4 blockquote:before {
+  content: open-quote;
+}
+
+.wrapper_4 blockquote:after {
+  content: close-quote;
+}
+
+.wrapper_4 p {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3em;
+  font-family: Georgia, serif;
+  line-height: 1.3;
+  font-size: 14px;
+  font-style: italic;
 }
