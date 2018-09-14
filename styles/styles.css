@@ -1,0 +1,195 @@
+a:hover { color: orange }
+
+/* font-family: 'Eczar', serif;
+font-family: 'Gentium Basic', serif; */
+
+/* TYPESETTING */
+h1, h2, h3, h4, h5, h6 { font-family: 'Eczar', serif; }
+* { font-family: 'Gentium Basic', serif;
+line-height: 100% ;}
+ul { list-style: none; }
+body { overflow-x: hidden; }
+/* SINLGE COLUMN GRID */
+.container {
+display: grid;
+width: 100%;
+grid-template-columns: 1fr ;
+grid-template-rows: 50px 660px 400px 300px 400px 450px 400px 250px;
+}
+
+/* NAVIGATION BAR */
+.navigation-bar {
+background-color: seagreen;
+grid-column: 1;
+grid-row: 1;
+margin: 0 -9999rem;
+padding: 0.25rem 9999rem;
+opacity: .8;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+}
+
+.nav-elements {
+display: flex;
+justify-content: space-between;
+}
+
+.nav-startrly{ flex-grow: .5; }
+.nav-about{ flex-grow: .1; }
+
+nav ul>li:hover  {color: tomato}
+
+/* HEADER */
+.startrly-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  grid-column: 1;
+  grid-row: 2;
+}
+.startrly-header::after {
+  content: "";
+  background-size: cover;
+  background-image: url('../img/people-coffee-tea-meeting.jpg');
+  filter: grayscale(100%);
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+section.startrly-header>h1 {
+  font-size: 8rem;
+  font-weight: bold;
+}
+section.startrly-header>sub {
+  font-size: 200%
+}
+section.startrly-header>a:hover { color:tomato}
+section.startrly-header>a:active {
+  color:tomato;
+  background-color: lightgreen;
+  box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+section.startrly-header>a {
+  color: black;
+  background-color: seagreen;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow:;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+section.startrly-header>h1 {
+text-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.startrly-header-title { margin-bottom: 70px; }
+.startrly-header-tagline { margin-bottom: 80px }
+.startrly-header-button { margin-bottom: 150px}
+
+/* QUOTE 1 */
+.pullquote {
+  display: flex;
+  background-color: gainsboro;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 -9999rem;
+  padding: 0.25rem 10002rem;
+  font-size: 2rem;
+  font-style: italic;
+  font-family: 'Eczar', serif;
+  grid-column: 1;
+  grid-row: 3;
+}
+
+/* BLOCK QUOTE 1 */
+
+section.pullquote>p {
+  align-self: flex-end;
+  flex-shrink: 2
+}
+
+.section-why {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+section.section-why>h2 { text-align: center; }
+
+.why-reasons {
+  display: flex;
+  align-content: space-between;
+}
+
+.pullquote2 {
+  display: flex;
+  background-color: gainsboro;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 -9999rem;
+  padding: 0.25rem 10002rem;
+  font-size: 2rem;
+  font-style: italic;
+  font-family: 'Eczar', serif;
+  grid-column: 1;
+  grid-row: 5;
+}
+
+section.pullquote2>p {
+  align-self: flex-end;
+  flex-shrink: 2;
+}
+
+/*  MEET THE TEAM */
+section.meet-the-team>h2 { text-align: center; }
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+
+section.meet-the-team>h2 { text-align: center; }
+.meet-the-team {
+  grid-column: 1;
+  grid-row: 6;
+}
+
+section.meet-the-team img { border-radius: 50%}
+
+/* SPONSORS SECTION */
+.sponsors {
+  grid-column: 1;
+  grid-row: 7;
+}
+section.sponsors>h2 { text-align: center; }
+
+.sponsor-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  background-color: seagreen;
+  justify-content: space-around;
+
+  margin-bottom: -9999rem;
+  overflow-y: hidden;
+  margin-left: -9999rem;
+  margin-right: -9999rem;
+  padding: 0.25rem 9999rem;
+  grid-column: 1;
+  grid-row: 8;
+}
+.about-footer{
+  flex-grow: .7;
+}
+section.footer li:hover{ color: tomato }
