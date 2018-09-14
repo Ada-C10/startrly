@@ -140,12 +140,12 @@ blockquote::before, blockquote::after {
   grid-area: de;
 } */
 
-#meet-team-list {
+#meet-team-list, #meet-team-list-2 {
   display: flex;
   flex-wrap: wrap;
-  height: 400px;
+  height: 300px;
   flex-direction: row;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-around;
   /* display: grid;
   height: 25em;
@@ -156,11 +156,12 @@ blockquote::before, blockquote::after {
     ". .  cha .  de .   .";*/
 }
 
-#meet-team-list img{
+#meet-team-list img, #meet-team-list-2 img{
   border-radius: 50%
 }
 
-#footer-links, {
+
+#footer-links {
   flex-direction: column;
 }
 
@@ -168,7 +169,7 @@ blockquote::before, blockquote::after {
   display: flex;
   flex-wrap: wrap;
   background-color: black;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 
