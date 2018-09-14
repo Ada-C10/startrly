@@ -1,0 +1,101 @@
+.grid-container {
+  /* display: grid;
+  grid-template-rows: 100px 300px 100px;
+  grid-template-columns: auto auto auto auto; */
+  /* border: 1px red dashed; */
+}
+
+section {
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+}
+
+.navigation{
+  border: 1px blue dashed;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body .navigation > ul {
+  /* grid-column: 1 / 2;
+  grid-row: 1 / 2; */
+  padding: 10px;
+  font-size: 1.2em;
+  display: flex;
+}
+
+
+#about {
+  margin-left: auto;
+}
+
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.intro{
+  text-align: center;
+  border: 1px red dashed;
+}
+
+.intro h1{
+  font-family: 'Nixie One', sans-serif;
+  font-size: 3em;
+  letter-spacing: 3px;
+}
+
+.intro sub{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  letter-spacing: 2px;
+}
+
+#action-button{
+  display: block;
+  width: 150px;
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.intro a{
+  color: rgb(19, 21, 23);
+  text-decoration: none;
+}
+
+
+.quote blockquote:before, .quote blockquote:after{
+  content: '"';
+  font-size: 20px;
+}
+
+.quote p:before{
+  content: '--';
+  font-size: 20px;
+}
+
+.quote {
+  background-color: peachpuff;
+  font-style: italic;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: serif;
+  line-height: 200%
+}
+
+.quote p {
+  border: dashed pink;
+  text-align: right;
+}
+
+
+.team-photo{
+  padding: 3px;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+}
