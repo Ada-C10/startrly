@@ -90,9 +90,10 @@ main {
 
 blockquote {
   text-align: center;
-  font-family: cursive;
   align-items: center;
   justify-content: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2em;
 }
 
 blockquote::before, blockquote::after {
@@ -102,6 +103,8 @@ blockquote::before, blockquote::after {
 .author {
   text-align: right;
   margin-right: 40px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2em;
 }
 
 .author::before {
