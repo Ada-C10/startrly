@@ -6,16 +6,17 @@
 }
 
 ul {
-  width: 90vw;
+  width: 98vw;
   height: 20vh;
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 20% 20% 20% 20% 20%;
-
+  background-color: black;
 }
 
 li {
   list-style: none;
+  color: grey;
 }
 
 #nav-Startrly {
@@ -29,11 +30,7 @@ li {
 
 #nav-About {
   grid-column-start: 5;
-  text-align: right;
-}
-
-main {
-
+  text-align: center;
 }
 
 #top-banner {
@@ -41,12 +38,14 @@ main {
   flex-direction: column;
   background: url("https://nu.aeon.co/images/5f346448-1d3c-4e9a-a60b-7d485b58b2b0/header_Unseen-image-2-edit-2-1200x848.jpg");
   color: #00e6ac;
+  margin: -20px;
 }
 
 #top-banner div:first-child{
   font-size: 1.5em;
   text-align: center;
   vertical-align: middle;
+  margin-bottom: -30px;
 }
 
 #top-banner div:nth-child(2) {
@@ -81,21 +80,26 @@ main {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  color: grey;
+  text-align: left;
+  height: 12em;
+  align-items: center;
 }
 
 #top-quote, #bottom-quote {
   display: flex;
   flex-direction: column;
-  height: 350px;
+  height: 300px;
   justify-content: center;
+  font-family: 'Playfair Display', serif;
 }
 
 blockquote {
   text-align: center;
   align-items: center;
   justify-content: center;
-  font-family: 'Dancing Script', cursive;
-  font-size: 2em;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
 }
 
 blockquote::before, blockquote::after {
@@ -105,18 +109,29 @@ blockquote::before, blockquote::after {
 .author {
   text-align: right;
   margin-right: 40px;
-  font-family: 'Dancing Script', cursive;
-  font-size: 2em;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
 }
 
 .author::before {
   content: "~~"
 }
 
-#team-photos {
+#meet-team, #why {
+  background-color: black;
+  color: #00e6ac;
+  text-align: center;
+}
+
+#meet-team-list {
   display: flex;
   flex-wrap: wrap;
-  height: 300px;
-  align-content: space-around;
-  flex-direction: column;
+  height: 600px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#meet-team-list img{
+  border-radius: 50%
 }
