@@ -1,0 +1,285 @@
+/* Navigation bar ----------------------------*/
+
+nav{
+  background-color: rgb(189, 244, 74);
+  margin-bottom: -16px;
+  margin-top: -16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr
+}
+
+#navigation > li:first-of-type{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#navigation > li:nth-of-type(2){
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+#navigation > li:nth-of-type(3){
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+#navigation > li{
+  list-style-type: none;
+  text-align: center;
+}
+
+/* Greeting --------------------------- */
+
+#greeting{
+  /* background-color: rgb(151, 185, 204); */
+  background-image: url(../wireframes/rock.jpg);
+  background-size: 100vw 70vh;
+  display: flex;
+  width: 100vw;
+  height: 70vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: sans-serif;
+  border-bottom: .5px solid gray;
+  flex-wrap: wrap;
+}
+
+#greeting > h1{
+  font-size: 3em;
+  margin-bottom: -100px;
+  font-family: 'Courgette', cursive;
+  letter-spacing: 1px;
+  color: white;
+}
+
+#greeting > sub{
+  font-size: 1.5em;
+  color: rgb(149, 16, 16);
+}
+
+#greeting > a{
+  margin-top: -100px;
+  border: .75px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+#greeting a:hover{
+  color: green;
+}
+
+/* Lorem ---------------------------------- */
+
+#lorem{
+  display: flex;
+  width: 100vw;
+  height: 60vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  font-size: 1.25em;
+  border-bottom: .5px solid gray;
+}
+
+#lorem p{
+  margin-left: 70vw;
+}
+
+/* Why -------------------------------------- */
+
+#why{
+  width: 100vw;
+  border-bottom: .5px solid gray;
+}
+
+#why > h2{
+  text-align: center;
+}
+
+#why ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+
+}
+
+#why li{
+  list-style: none;
+}
+
+.first{
+  width: 30vw;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: 1fr 1fr 1fr 1fr;
+}
+
+.first img{
+  grid-column: 1/2;
+  grid-row: 1/3;
+  text-align: right;
+}
+
+.first strong{
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+
+.first p{
+  grid-column: 2/4;
+  grid-row: 1/3;
+  margin-top: 30px;
+}
+
+/* Nemo ------------------------------------- */
+#nemo{
+  display: flex;
+  width: 100vw;
+  height: 60vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  font-size: 1.25em;
+  border-bottom: .5px solid gray;
+}
+
+#nemo p{
+  margin-left: 70vw;
+}
+
+/* Team ---------------------------------------- */
+
+#team > h2{
+  text-align: center;
+}
+
+#team ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr
+}
+
+#team img{
+  border-radius: 50%;
+}
+
+#team li{
+  list-style-type: none;
+  text-align: center;
+}
+
+#team li:first-of-type{
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+#team li:nth-of-type(2){
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+#team li:nth-of-type(3){
+  grid-column: 6/7;
+  grid-row: 1/2;
+}
+
+#team li:nth-of-type(4){
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+#team li:nth-of-type(5){
+  grid-column: 5/6;
+  grid-row: 2/3;
+}
+
+.profile_pic span{
+  display: block;
+}
+
+/* Sponsors----------------------------------------- */
+
+#sponsors{
+  margin-top: 70px;
+  margin-bottom: 70px;
+  border-bottom: .5px solid gray;
+}
+
+#sponsors > h2{
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+#sponsors ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#sponsors li{
+  list-style-type: none;
+}
+
+#sponsor_icons li:nth-of-type(1){
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+#sponsor_icons li:nth-of-type(2){
+  grid-column: 3/5;
+  grid-row: 1/2;
+}
+
+#sponsor_icons li:nth-of-type(3){
+  grid-column: 5/7;
+  grid-row: 1/2;
+}
+
+#sponsor_icons li:nth-of-type(4){
+  grid-column: 7/9;
+  grid-row: 1/2;
+}
+
+#sponsor_icons li:nth-of-type(5){
+  grid-column: 4/6;
+  grid-row: 2/3;
+}
+
+/* Footer---------------------------------------------- */
+
+#footer{
+  padding-bottom: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+#footer div:nth-of-type(1){
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#footer div:nth-of-type(2){
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+#footer ul{
+  list-style-type: none;
+  padding-left: 100px;
+}
+
+#footer h3{
+  padding-left: 100px;
+}
