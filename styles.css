@@ -82,13 +82,21 @@ body {
   color: white;
   height: 50px;
   padding: 30px 200px;
-  font-family: cursive;
+  font-family: 'Ruslan Display', cursive;
   line-height: 2.3em;
+}
+
+blockquote:before {
+  content: open-quote;
+}
+
+blockquote:after {
+  content: close-quote;
 }
 
 .quotes p {
   color: white;
-  font-family: cursive;
+  font-family: 'Ruslan Display', cursive;
   width: 250px;
   text-align: center;
   margin-left: 1050px;
@@ -138,7 +146,7 @@ h2 {
 strong {
   margin-left: 1px;
   padding-left: 5px;
-  font-size: 10px;
+  font-size: 12px;
   display: grid;
   grid-column: 3 / span 3;
   grid-row: 1 / span 1;
@@ -149,7 +157,7 @@ strong {
   margin-left: 1px;
   padding-left: 5px;
   padding-right: 10px;
-  font-size: 10px;
+  font-size: 11px;
   grid-column: 3 / span 3;
   grid-row: 2 /  span 3;
 }
@@ -174,29 +182,32 @@ h2 {
   text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
 }
 
+.teammate-1, .teammate-2, .teammate-3 {
+  grid-row: 1 / 1;
+}
+
+.teammate-4, .teammate-5 {
+  grid-row: 2 / 2;
+}
+
 .teammate-1 {
   grid-column: 1 / 1;
-  grid-row: 1 / 1;
 }
 
 .teammate-2 {
   grid-column: 3 / 3;
-  grid-row: 1 / 1;
 }
 
 .teammate-3 {
   grid-column: 5 / 5;
-  grid-row: 1 / 1;
 }
 
 .teammate-4 {
   grid-column: 2 / 2;
-  grid-row: 2 / 2;
 }
 
 .teammate-5 {
   grid-column: 4 / 4;
-  grid-row: 2 / 2;
 }
 
 .team img {
@@ -233,5 +244,5 @@ span {
 }
 
 .re-src_info ul {
-  
+
 }
