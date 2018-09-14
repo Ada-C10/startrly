@@ -2,20 +2,21 @@
   border: black 1px solid;
 } */
 
-body {
+/* body {
   max-width: 75rem;
   max-height: 50rem;
-}
+} */
 
 .container {
   display: grid;
-  grid-template: 0.25fr 1fr 2fr 2fr 2fr 4fr 3fr 1fr /1fr;
+  grid-template: 10% 10% 10% 20% 10% 20% 10% 10% /100%;
   text-align: center;
 }
 
 .navigation-bar {
   display: grid;
   grid-template: 1fr / 1fr 3fr 1fr 1fr;
+  background-color: pink;
 }
 
 .navigation-bar li:nth-child(1) {
@@ -38,14 +39,14 @@ li {
 }
 
 nav li:hover {
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: teal;
 }
 
 h1, h2 {
   font-family: 'Allerta Stencil', sans-serif;
   color: indigo;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 h2 {
@@ -54,19 +55,45 @@ h2 {
 
 .headline {
   display: grid;
-  grid-template: 40% 20% 40% / 100%;
+  grid-template: 3fr 1fr 1.5fr / 100%;
+  background-color: gray;
+  max-height: 300px;
 }
 
 .headline h1 {
-  grid-row: 1/2;
+  grid-row: 1 2;
+  font-family: 'Allerta Stencil', sans-serif;
+  color: indigo;
 }
 
 .headline sub {
-  grid-row: 2/3;
+  grid-row: 2 3;
+  font-size: 1.75rem;
 }
 
 .headline a {
+  grid-row: 3 4;
+}
+
+.quote {
+  display: grid;
+  grid-template: 20% 40% 20% / 0.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
+  font-style: italic;
+  color: indigo;
+  background-color: lightblue;
+}
+
+.quote blockquote {
+  grid-row: 2/3;
+  grid-column: 3/7;
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.quote p {
   grid-row: 3/4;
+  grid-column: 6/8;
 }
 
 /* font-family: 'Shadows Into Light', sans-serif; */
