@@ -5,7 +5,7 @@
   font-family: Helvetica;
 }
 
-ul {
+#top-nav ul {
   width: 98vw;
   height: 20vh;
   display: grid;
@@ -76,7 +76,7 @@ li {
 }
 
 
-#why-list {
+#why-list, #footer-links {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -117,21 +117,63 @@ blockquote::before, blockquote::after {
   content: "~~"
 }
 
-#meet-team, #why {
+#meet-team, #why, #sponsors {
   background-color: black;
   color: #00e6ac;
   text-align: center;
+  padding: 5px;
 }
+
+/* #Kari {
+    grid-area: ka;
+}
+#Dan {
+    grid-area: da;
+}
+#Chris {
+    grid-area: chr;
+}
+#Charles {
+    grid-area: cha;
+}
+#Dee {
+  grid-area: de;
+} */
 
 #meet-team-list {
   display: flex;
   flex-wrap: wrap;
-  height: 600px;
-  align-items: center;
+  height: 400px;
   flex-direction: row;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  /* display: grid;
+  height: 25em;
+  grid-template-columns: repeat(7, 16%);
+    grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    ". ka .   da .  chr ."
+    ". .  cha .  de .   .";*/
 }
 
 #meet-team-list img{
   border-radius: 50%
+}
+
+#footer-links, {
+  flex-direction: column;
+}
+
+#footer-links, #sponsors-list {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  align-items: flex-end;
+}
+
+
+#sponsors-list {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
