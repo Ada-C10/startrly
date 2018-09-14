@@ -1,0 +1,218 @@
+@import url('http://fonts.googleapis.com/css?family=Economica');
+@import url('http://fonts.googleapis.com/css?family=Monoton');
+@import url('http://fonts.googleapis.com/css?family=Tangerine');
+
+
+* {
+  font-family: Economica;
+  background-color: seashell;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.topper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding-left: 0.5em;
+  background-color: LavenderBlush;
+  /* position:fixed; */
+}
+
+
+ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 1.0em;
+  font-size: 1.2rem;
+}
+
+#try {
+  grid-column-start: 2;
+  text-align: center;
+}
+
+#about {
+  grid-column-start: 3;
+  text-align: right;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  background-color: LavenderBlush;
+  align-items: center;
+  padding-bottom: 0.4em;
+  padding-top: 0.4em;
+  border-bottom: 1px solid gray;
+}
+
+.banner sub {
+  line-height: 2;
+  font-size: 1.2rem;
+  padding-bottom: 0.8em;
+  background-color: LavenderBlush;
+}
+
+.banner h1 {
+  margin: 0em;
+  font-size: 3.0rem;
+  background-color: LavenderBlush;
+  font-family: Monoton
+}
+
+h1:hover{
+  background-color: purple;
+  color: white;
+}
+
+.banner a {
+  display: flex;
+  padding: 0.8em;
+  /* border: 1.2px solid gray; */
+  font-size: 1.0em;
+  background-color:lavender;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  /*  how to get rid of the underlining of this word in the box*/
+}
+
+.team {
+  display: flex;
+  border-bottom: 1px solid gray;
+  flex-direction: column;
+  align-items: center;
+  background-color: LavenderBlush;
+}
+
+.team h2 {
+  font-size: 2.5em;
+  background-color: LavenderBlush;
+  margin-bottom: 0;
+}
+
+.team ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin: 4em;
+  max-width: 636px;
+  padding-left: 0em;
+  background-color: LavenderBlush;
+}
+
+.team ul li {
+  padding: 1.0em;
+  background-color: LavenderBlush;
+}
+
+span {
+  display: block;
+  text-align: center;
+  background-color: LavenderBlush;
+}
+
+.team ul li img {
+  border-radius: 50%
+}
+
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: MistyRose;
+  border-bottom: 1px solid gray;
+}
+
+.quote blockquote {
+  background-color: MistyRose;
+  font-size: 2.5em;
+  font-family: Tangerine;
+
+}
+
+.quote p {
+  display: flex;
+  margin: 0em;
+  flex-flow: row-reverse;
+  background-color: MistyRose;
+  font-size: 2.0em;
+  font-family: Tangerine;
+}
+
+
+.why {
+  display: flex;
+  border-bottom: 1px solid gray;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why h2 {
+  font-size: 2.0em;
+  margin-bottom: 0;
+}
+
+.why ul {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  padding-left: 0;
+}
+.why ul li strong {
+  display: flex;
+  flex-direction: row;
+}
+
+.why ul li strong p {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  padding-left: 0;
+}
+
+strong {
+  display: block;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.sponsors {
+  display: flex;
+  border-bottom: 1px solid gray;
+  flex-direction: column;
+  align-items: center;
+}
+.sponsors ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+  margin: 0em;
+  padding-left: 0em;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer div ul{
+  display: flex;
+  flex-direction: column;
+  padding: 0.2em;
+  font-size: 0.8em;
+}
+.footer div h3 {
+  padding: 0.2em
+  margin: 0.2em;
+}
+
+.footer div ul li {
+  padding: 0.2em;
+}
