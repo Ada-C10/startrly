@@ -1,0 +1,147 @@
+nav > ul {
+  display: grid;
+  grid-template-columns: 70% 20% 10%;
+  list-style: none;
+}
+
+#startly  {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Work Sans', sans-serif;
+  text-transform: capitalize;
+  padding-bottom: 6em;
+  color: white;
+  background-image: url(http://greenturf.asia/wp-content/uploads/2016/10/GreenTurf-website-Blog-Featured-Image-780X260-min.jpg);
+}
+
+#startly > h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+#startly > a {
+  border: 1px solid lightgrey;
+  padding: 10px 10px 10px 10px;
+  border-radius: 7px;
+  font-size: .75em;
+  text-decoration: none;
+  color: white;
+}
+
+#startly > a:hover {
+  background-color: lightgrey;
+  color: green;
+}
+
+.quote {
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 3em;
+}
+
+.quote > blockquote {
+  font-style: italic;
+  padding: 5em 20em 1em 20em ;
+  font-size: 1em;
+}
+
+.quote > p {
+  font-style: italic;
+  text-align: right;
+  padding-right: 20em;
+
+}
+
+h2 {
+  padding-top: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.why {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  align-items: flex-start;
+  overflow: visible;
+}
+
+.why > li > img {
+  float: left;
+  margin: 4px;
+}
+
+.why > li > p {
+  margin-top: 0;
+  flex-wrap: wrap;
+  width: 278px;
+}
+
+.meettheteam1 {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-right: 5em;
+  padding-left: 5em;
+}
+
+.meettheteam1 > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 1 285px;
+}
+
+ .meettheteam1 > li > img {
+  border-radius: 50%;
+}
+
+.meettheteam2 {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 3%;
+}
+
+.meettheteam2 > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 1 235px;
+}
+
+ .meettheteam2 > li > img {
+  border-radius: 50%;
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-bottom: 2%;
+}
+
+.footer {
+  background-image: url(https://previews.123rf.com/images/hugnoi/hugnoi1502/hugnoi150200033/36809918-vintage-wood-background-.jpg);
+  border-top: 1px solid lightgrey;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  }
+
+  .footer > .support {
+    padding-left: 2em;
+  }
