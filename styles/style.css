@@ -1,0 +1,235 @@
+/* entire body */
+
+body {
+  font-family: 'Economica', sans-serif;
+  font-size: 1.25em;
+  background-color: #D8BFD8;
+  color: black;
+
+}
+
+/* nav section. */
+
+nav {
+  top: 0;
+  width: 100%;
+  background-color: #A0A083;
+  font-weight: bold;
+  position: fixed;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  padding-left: 2px;
+  margin-left: 2px;
+  display: inline-block;
+  width: 15%;
+
+}
+
+nav li:first-child {
+  width: 60%;
+}
+
+/* first section -- 'Startly Section' */
+
+section:nth-of-type(1) {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 700px;
+  border-bottom: solid #4D6A6D 1px;
+  color: white;
+  text-shadow: -1px -1px 0 #000, -1px -1px 0 #000, -1px -1px 0 #000, -1px -1px 0 #000;
+  background: #C9ADA1 url('../images/startup_typical.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section:nth-of-type(1) h1{
+  font-size: 2.5em;
+  margin-top: 3%;
+}
+
+section:nth-of-type(1) sub{
+  margin: 1%;
+  font-size: 1.75em;
+  position: inherit;
+}
+
+section:nth-of-type(1) a{
+  text-decoration: none;
+  font-size: 1.75em;
+  color: white;
+  text-shadow: -1px -1px 0 #000, -1px -1px 0 #000, -1px -1px 0 #000, -1px -1px 0 #000;
+  margin-top: 65px;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+
+section:nth-of-type(1) a:hover {
+  background-color: #A0A083;
+  color:
+}
+
+/* two blockquote sections */
+
+.quote {
+  border-bottom: solid #4D6A6D 1px;
+}
+
+.quote blockquote {
+  font-size: 1.5em;
+  font-style: italic;
+  padding: 8% 5% 2% 5%;
+  line-height: 1.75em;
+  margin-top: 0;
+}
+
+.quote blockquote:before{
+  content: "\201C";
+}
+
+.quote blockquote:after {
+  content: "\201D";
+}
+
+.quote p {
+  text-align: right;
+  font-style: italic;
+  font-size: 1.5em;
+  padding: 0 5% 8%;
+}
+
+.quote p:before {
+  content: "--"
+}
+
+
+/* the 3rd section with 'Why' */
+section:nth-of-type(3) {
+  border-bottom: solid #4D6A6D 1px;
+  font-size: 1.2em;
+}
+
+section:nth-of-type(3) h2 {
+  text-align: center;
+}
+
+section:nth-of-type(3) ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+section:nth-of-type(3) li {
+  width: 430px;
+}
+
+section:nth-of-type(3) img {
+  float: left;
+  margin: 3px;
+}
+
+section:nth-of-type(3) strong {
+  /* display: inline; */
+  margin-left: 5px;
+}
+
+section:nth-of-type(3) p {
+  margin-left: 5px;
+}
+
+
+
+
+/* 5th section with 'Meet the team' */
+
+section:nth-of-type(5) {
+  text-align: center;
+  margin: 2px;
+}
+
+section:nth-of-type(5) h2 {
+  margin-top: 75px;
+}
+
+section:nth-of-type(5) ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+section:nth-of-type(5) li {
+  padding: 2px;
+  margin: 5%;
+  max-width: 40%;
+  min-width: 300px;
+}
+
+section:nth-of-type(5) li img {
+  border-radius: 50%;
+  border: solid grey;
+  padding: 3px;
+}
+
+section:nth-of-type(5) li span {
+  display: block;
+}
+
+
+/* 6th section with 'Sponsors' */
+
+section:nth-of-type(6) {
+  border-bottom: solid #4D6A6D 1px;
+}
+
+section:nth-of-type(6) h2 {
+  margin-top: 75px;
+  text-align: center;
+}
+
+section:nth-of-type(6) ul {
+  list-style-type: none;
+  /* padding: 3px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+section:nth-of-type(6) li {
+  padding: 2px;
+}
+
+
+
+/* Footer */
+
+#footer {
+  display: flex;
+  align-items: flex-start;
+  font-size: 1em;
+  flex-wrap: wrap;
+}
+
+#footer div {
+  margin: 5%;
+}
+
+#footer ul {
+  list-style-type: none;
+  padding: 0;
+}
