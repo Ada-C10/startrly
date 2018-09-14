@@ -1,5 +1,13 @@
 /* Navigation bar ----------------------------*/
 
+nav{
+  background-color: rgb(189, 244, 74);
+  margin-bottom: -16px;
+  margin-top: -16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 nav ul{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -48,10 +56,12 @@ nav ul{
   margin-bottom: -100px;
   font-family: 'Courgette', cursive;
   letter-spacing: 1px;
+  color: white;
 }
 
 #greeting > sub{
-  font-size: 1em;
+  font-size: 1.5em;
+  color: rgb(149, 16, 16);
 }
 
 #greeting > a{
