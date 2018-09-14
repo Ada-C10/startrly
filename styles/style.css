@@ -169,10 +169,13 @@ strong::after {
   display: flex;
   padding-left: 0;
   flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-evenly;
-  margin-left: 30vw;
-  margin-right: 30vw;
+  justify-content: center;
+  margin-left: 27vw;
+  margin-right: 27vw;
+}
+
+#team ul li {
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 #team img {
