@@ -15,14 +15,20 @@
 .about {
   text-align: right;
 }
+
+
 blockquote {
 font-style: italic;
 font-size: 20px
 }
 
+
 section h1:hover {
   color:teal;
 }
+
+
+/* ################################################## */
 
 li {
     list-style-type: none;
@@ -39,11 +45,13 @@ li {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
 
-  .item1 {
+  .title {
+      font-family: 'Gamja Flower', cursive;
       height: 50px;
       display: flex;
       align-items: center;
       justify-content: center;
+
   }
 
 .item2:link {
@@ -55,6 +63,8 @@ li {
       display: flex;
       align-items: center;
       justify-content: center;
+      font-family: 'Gamja Flower', cursive;
+      font-size: 50
   }
 
   /* .container { */
@@ -106,8 +116,13 @@ li.container {
   /* line-height: 50px; */
 }
 
+#support {
+  color:salmon;
+  font-size: 4rem
+}
 
-/* .container1 li {
-  display: grid; */
+.container2 {
+  display: grid;
   /* grid-template: 10px 50px / 20px 10px 25% */
+  grid-template:
 }
