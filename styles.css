@@ -53,8 +53,8 @@ body {
   font-weight: bold;
   color: rgb(143, 68, 1);
   text-shadow: 2px 2px 3px black;
-  /* capitalize every first word */
-  /* border: 1px solid black; */
+  text-transform: capitalize;
+  text-shadow: 2px 2px 5px black;
   margin-bottom: 10px;
   font-size: 30px;
   padding: 50px;
@@ -69,6 +69,10 @@ body {
   margin-top: 1em;
   margin-bottom: 1em;
   padding: 10px;
+}
+
+.button:hover {
+  border: 2px solid brown;
 }
 
 .quotes {
@@ -100,6 +104,10 @@ blockquote:after {
   width: 250px;
   text-align: center;
   margin-left: 1050px;
+}
+
+.quotes p::before {
+  content: "--";
 }
 
 h2 {
@@ -176,6 +184,7 @@ h2 {
 
 .team li {
   padding-top: 40px;
+  padding-left: 20px;
   list-style: none;
   color: #e0dfdc;
   letter-spacing: .1em;
@@ -234,15 +243,21 @@ span {
 
 .re-src_info {
   margin: auto;
-  display: grid;
-  grid-template-columns: 5;
-  grid-template-rows: 1;
+  display: flex;
 }
 
-.re-src_info h3 {
-
+.info {
+  padding-left: 150px;
 }
 
-.re-src_info ul {
+.info {
+  float: left;
+}
 
+.support {
+  padding-left: 50px;
+}
+
+.support h3 {
+  float: left;
 }
