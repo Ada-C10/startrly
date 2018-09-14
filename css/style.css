@@ -11,7 +11,7 @@ ul {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 20% 20% 20% 20% 20%;
-  border-color: black;
+
 }
 
 li {
@@ -39,6 +39,8 @@ main {
 #top-banner {
   display: flex;
   flex-direction: column;
+  background: url("https://nu.aeon.co/images/5f346448-1d3c-4e9a-a60b-7d485b58b2b0/header_Unseen-image-2-edit-2-1200x848.jpg");
+  color: #00e6ac;
 }
 
 #top-banner div:first-child{
