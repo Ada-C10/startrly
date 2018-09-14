@@ -53,6 +53,7 @@ h3 {
   grid-area: header;
   border-bottom: 1px black solid;
 }
+
 .content-quote:first-of-type {
   grid-area: content-quote-1;
 }
@@ -275,12 +276,11 @@ ul.why-pictures-box p {
   list-style: none;
   display: grid;
   grid-template-rows: 125px 100px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
   margin: 0;
   padding-left: 100px;
   padding-right: 100px;
-  align-content: space-between;
 }
 
 .content-sponsors li:not(:last-of-type) {
@@ -302,11 +302,11 @@ ul.why-pictures-box p {
 
 .footer > div {
   margin: 0;
-  flex: 1 60px;
+  flex: 1 30px;
 }
 
 .footer > div:nth-of-type(2) {
-  flex: 10 60px;
+  flex: 10;
 }
 
 .footer ul {
