@@ -1,0 +1,213 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: lightgreen;
+
+
+
+}
+
+
+.first_block ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+
+}
+
+.list > .startly{
+  display: flex;
+  flex: 2;
+}
+
+
+.list > .try{
+  display: flex;
+  flex: 1;
+}
+
+
+.first_block {
+  min-width: 100px;
+  min-height: 70px;
+  font-size: 0.5em;
+  font-weight:bold;
+}
+
+
+
+.second_block {
+  min-width: 100px;
+  min-height: 200px;
+  border-bottom: solid 1px gray;
+  text-align: center;
+}
+
+.second_block  {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+
+}
+
+
+.second_block sub {
+  font-weight: bold;
+}
+
+
+.second_block a {
+  border-radius: 50px;
+  border:1px solid grey;
+
+}
+
+
+
+.third_block {
+  border-bottom: solid 1px gray;
+  font-style: italic;
+
+}
+
+.third_block blockquote {
+  display: flex;
+  justify-content: center;
+}
+
+
+.third_block blockquote:before, .third_block blockquote:after {
+  content: '"';
+}
+
+.third_block p {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.third_block p:before {
+  content: "--";
+
+}
+
+.fourth_block {
+  border-bottom: solid 1px gray;
+
+
+}
+
+
+.fourth_block h2 {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.fourth_block ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.fourth_block ul li p {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.fifth_block {
+  border-bottom: solid 1px gray;
+}
+
+
+.fifth_block:hover {
+color: orange;
+}
+
+
+.fifth_block blockquote {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+
+}
+
+
+.fifth_block blockquote:before, .fifth_block blockquote:after {
+  content: '"';
+}
+
+.fifth_block p {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.fifth_block p:before {
+  content: "--";
+
+}
+
+
+.sixth_block ul img {
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.sixth_block ul img span {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: baseline;
+  justify-content: space-around;
+}
+
+
+
+.sixth_block h2 {
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.sixth_block ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+
+
+}
+
+.seventh-block {
+  border-bottom: solid 1px gray;
+
+}
+
+.seventh-block h2 {
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.seventh-block ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+
+}
+
+.last_block {
+  display: flex;
+  flex-direction: row;
+}
+
+.last_block div ul {
+  list-style: none;
+
+}
