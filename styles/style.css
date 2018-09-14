@@ -1,0 +1,71 @@
+
+
+body {
+    font-family: 'Krona One';font-size: 22px;
+    background-color:#EFEFD0
+}
+h1 {
+ font-style: strong
+
+}
+
+#container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+  flex-direction: column ;
+  justify-content: space-around;
+align-items: center;
+
+}
+
+ul{
+list-style-type: none;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row  ;
+  justify-content: space-around;
+  background-color:#F7C59F
+}
+
+#button {
+border: solid;
+border-color: #FF6B35
+}
+
+#quote{
+display: block;
+width: 550px;
+height: auto;
+padding: 10px;
+margin:auto;
+
+}
+#author {
+  display: block;
+  width: 100px;
+  height: auto;
+  padding: 10px;
+  margin:auto;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px;
+}
+
+.profilepic {
+
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  border-radius: 50%;
+  float:left;
+}
+
+section {
+  clear: both;
+}
