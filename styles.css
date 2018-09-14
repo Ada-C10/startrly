@@ -116,6 +116,7 @@ h2{
   flex-wrap: wrap;
   justify-content: space-around;
   border-bottom: 1px solid;
+  padding-bottom: 5em;
 }
 
 .footer{
