@@ -1,0 +1,280 @@
+
+.intro {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  background-color: pink;
+}
+
+.header  {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+a {
+  background-color: transparent;
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1.5em;
+  border-radius: 10px;
+  border: solid 2px;
+  border-color: skyblue;
+  position: relative;
+  left: 38%;
+  padding: 1em;
+  color: white;
+}
+
+h1 {
+  font-size: 8em;
+  font-weight: bold;
+  margin: 0.67em 0;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  font-family: 'Gamja Flower', cursive;
+  color: white;
+}
+
+#one {
+  position: relative;
+  right: 150px;
+
+}
+
+#two {
+  position: relative;
+  left: 400px;
+}
+
+#three {
+  position: relative;
+  left: 100px;
+}
+
+
+blockquote::before {
+  content: "\"";
+}
+
+blockquote::after {
+  content: "\"";
+}
+
+.quote {
+  /* display: flexbox; */
+  margin-left: 6em;
+  margin-right: 4em;
+  margin-top: 3em;
+  margin-bottom: -1em;
+  height: 9vh;
+  font-size: 2em;
+  font-style: italic;
+}
+
+.author::before {
+  content: "--";
+}
+.author {
+  padding-top: -10em;
+  padding-bottom: -10em;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 4em;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.sizing {
+  display: grid;
+  height: 40vh;
+  margin-top: 10em;
+  border-top-color: forestgreen;
+  padding-top: 1em;
+  border-top: solid 2px;
+  border-bottom: solid 2px;
+}
+
+.tagline {
+  font-size: 200%;
+  font-weight: bold;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  color: white;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 200%;
+  font-weight: bold;
+  padding-top: 2em;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  height: 21vh;
+  padding-right: 5em;
+  padding-left: 5em;
+  padding-top: 4em;
+}
+
+.strong {
+  vertical-align: top;
+  grid-column-start: 6;
+  max-width: 10em;
+  max-height: 1em;
+  grid-row-start: 1;
+}
+
+.p {
+  grid-row-start: 2;
+  grid-column-start: 6;
+  grid-column-end: 12;
+
+}
+
+.strong-a {
+  vertical-align: top;
+  grid-column-start: 5;
+  max-width: 10em;
+  max-height: 1em;
+  grid-row-start: 1;
+}
+
+.c {
+  grid-row-start: 2;
+  grid-column-start: 5;
+  grid-column-end: 11;
+}
+
+.strong-b {
+  vertical-align: top;
+  grid-column-start: 13;
+  max-width: 10em;
+  max-height: 1em;
+  grid-row-start: 1;
+}
+
+.b {
+  grid-row-start: 2;
+  grid-column-start: 13;
+  grid-column-end: 20;
+}
+.area {
+  display: grid;
+  grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  list-style: none;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  border-top-color: forestgreen;
+  border-top: solid 2px;
+}
+
+.list {
+  margin-right: 5em;
+  margin-left: 5em;
+  list-style: none;
+}
+
+h3 {
+  margin-right: 6.5em;
+  margin-left: 6.5em;
+  /* border-top-color: forestgreen;
+  border-top: solid 2px; */
+}
+
+.area-a {
+  display: grid;
+  grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% ;
+  grid-template-rows: 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 10% 3% 3% 3% 3% 3% ;
+  list-style: none;
+  padding-top: 3em;
+}
+
+#pic1 {
+  grid-row-start: 1;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+#pic2 {
+  grid-row-start: 1;
+  grid-column-start: 10;
+  grid-column-end: 12;
+}
+
+#pic3 {
+  grid-row-start: 1;
+  grid-column-start: 15;
+  grid-column-end: 17;
+}
+
+#pic4 {
+  grid-row-start: 2;
+  grid-column-start: 7;
+  grid-column-end: 9;
+}
+
+#pic5 {
+  grid-row-start: 2;
+  grid-column-start: 13;
+  grid-column-end: 15;
+}
+
+#img1 {
+  border-radius: 100% 100% 100% 100%;
+  border: thick double #32a1ce;
+}
+
+#sp {
+  padding-top: 3em;
+}
+
+.area-b {
+  display: grid;
+  grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% ;
+  grid-template-rows: 3% 3% 3% 3% 3% 3% 3% 3% 3% 3% 10% 3% 3% 3% 3% 3% ;
+  list-style: none;
+}
+
+#box1 {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#box2 {
+  grid-row-start: 1;
+  grid-column-start: 7;
+  grid-column-end: 8;
+}
+
+#box3 {
+  grid-row-start: 1;
+  grid-column-start: 11;
+  grid-column-end: 15;
+}
+
+#box4 {
+  grid-row-start: 1;
+  grid-column-start: 16;
+  grid-column-end: 18;
+}
+
+#box5 {
+  grid-row-start: 2;
+  grid-column-start: 9;
+  grid-column-end: 15;
+}
