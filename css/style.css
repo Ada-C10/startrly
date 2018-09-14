@@ -1,0 +1,180 @@
+/* * {
+  border: black 1px solid;
+} */
+* {
+  font-family: Helvetica;
+}
+
+#top-nav ul {
+  width: 98vw;
+  height: 20vh;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  background-color: black;
+}
+
+li {
+  list-style: none;
+  color: grey;
+}
+
+#nav-Startrly {
+  grid-column-start: 1;
+}
+
+#nav-Try {
+  grid-column-start: 4;
+  text-align: right;
+}
+
+#nav-About {
+  grid-column-start: 5;
+  text-align: center;
+}
+
+#top-banner {
+  display: flex;
+  flex-direction: column;
+  background: url("https://nu.aeon.co/images/5f346448-1d3c-4e9a-a60b-7d485b58b2b0/header_Unseen-image-2-edit-2-1200x848.jpg");
+  color: #00e6ac;
+  margin: -20px;
+}
+
+#top-banner div:first-child{
+  font-size: 1.5em;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: -30px;
+}
+
+#top-banner div:nth-child(2) {
+  font-size: 2.5em;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 30px;
+  margin-top: -15px;
+  font-weight: bold;
+}
+
+#top-banner a:link{
+    color: grey;
+    text-decoration: none;
+}
+
+#top-banner a:visited{
+    color: grey;
+    text-decoration: none;
+}
+
+#top-banner div:last-child{
+  font-size: 1.5em;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 100px;
+  margin-top: 5px;
+}
+
+
+#why-list, #footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  color: grey;
+  text-align: left;
+  height: 12em;
+  align-items: center;
+}
+
+#top-quote, #bottom-quote {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+}
+
+blockquote {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+}
+
+blockquote::before, blockquote::after {
+  content: ' " ';
+}
+
+.author {
+  text-align: right;
+  margin-right: 40px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+}
+
+.author::before {
+  content: "~~"
+}
+
+#meet-team, #why, #sponsors {
+  background-color: black;
+  color: #00e6ac;
+  text-align: center;
+  padding: 5px;
+}
+
+/* #Kari {
+    grid-area: ka;
+}
+#Dan {
+    grid-area: da;
+}
+#Chris {
+    grid-area: chr;
+}
+#Charles {
+    grid-area: cha;
+}
+#Dee {
+  grid-area: de;
+} */
+
+#meet-team-list, #meet-team-list-2 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: space-around;
+  /* display: grid;
+  height: 25em;
+  grid-template-columns: repeat(7, 16%);
+    grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    ". ka .   da .  chr ."
+    ". .  cha .  de .   .";*/
+}
+
+#meet-team-list img, #meet-team-list-2 img{
+  border-radius: 50%
+}
+
+
+#footer-links {
+  flex-direction: column;
+}
+
+#footer-links, #sponsors-list {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  align-items: flex-start;
+}
+
+
+#sponsors-list {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
