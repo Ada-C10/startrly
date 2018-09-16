@@ -121,6 +121,28 @@ section {
 }
 
 
+/* WHY STARTLY */
+.why h2{
+  text-align: center;
+}
+
+.why-rationale{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.why-rationale img{
+  width:  100px;
+  height: 100px;
+  padding: 10px;
+}
+.why-rationale li{
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* MEET THE TEAM */
 .team-photo{
   padding: 3px;
   border: 1px solid gray;
