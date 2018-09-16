@@ -27,7 +27,7 @@ section {
 
 /* NAVIGATION */
 
-.navigation{
+.navigation, .footer{
   background-color: rgba(50, 56, 56, 0.17);
 }
 
@@ -177,4 +177,15 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+}
+
+
+/* FOOTER */
+.footer{
+  display: grid;
+  grid-template-columns: 20% auto;
+}
+
+.footer h3{
+  padding-left: 30px;
 }
