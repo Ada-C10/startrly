@@ -1,40 +1,64 @@
-.grid-container {
-  /* display: grid;
-  grid-template-rows: 100px 300px 100px;
-  grid-template-columns: auto auto auto auto; */
-  /* border: 1px red dashed; */
+/* ENTIRE PAGE */
+
+
+body {
+  font-family: 'Raleway', serif;
 }
 
+ul {
+  list-style-type: none;
+}
+
+.grid-container {
+  border: 1px dotted tomato;
+  display: grid;
+  grid-template-rows: repeat(11, fr);
+  grid-template-columns: 100%;
+}
+
+/* horizontal lines */
 section {
   padding-bottom: 10px;
   border-bottom: 1px solid lightgray;
   border-top: 1px solid lightgray;
 }
 
+/* NAVIGATION */
 
-ul {
-    list-style-type: none;
+.navigation{
+  background-color: rgba(50, 56, 56, 0.17);
 }
 
-body .navigation > ul {
-  padding: 10px;
-  font-size: 1.2em;
+.navigation > ul {
+  padding: 6px;
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+}
+
+.startly{
+  grid-column: 1 / 2;
+}
+
+.trynow{
+  grid-column: 2 /3;
   display: flex;
+  justify-content: flex-end;
+}
+
+.about{
+  grid-column: 3 /4;
+  display: flex;
+  justify-content: flex-end;
 }
 
 
-#about {
-  margin-left: auto;
-}
-
-
-body {
-  font-family: Helvetica, sans-serif;
-}
+/* INTRODUCTION */
 
 .intro{
   text-align: center;
-
+  content-align: center;
 }
 
 .intro h1{
@@ -49,8 +73,10 @@ body {
   letter-spacing: 2px;
 }
 
-#action-button{
+.action-button{
   display: block;
+  margin: 15px auto;
+
   width: 150px;
   padding: 10px;
   border: 2px solid gray;
@@ -63,6 +89,8 @@ body {
   text-decoration: none;
 }
 
+
+/* QUOTES */
 
 .quote blockquote:before, .quote blockquote:after{
   content: '"';
@@ -91,6 +119,6 @@ body {
 
 .team-photo{
   padding: 3px;
-  border: 1px solid lightgray;
+  border: 1px solid gray;
   border-radius: 50%;
 }
