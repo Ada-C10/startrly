@@ -1,8 +1,10 @@
 /* ENTIRE PAGE */
-
-
 body {
   font-family: 'Raleway', serif;
+}
+
+h2{
+  text-align: center;
 }
 
 ul {
@@ -122,10 +124,6 @@ section {
 
 
 /* WHY STARTLY */
-.why h2{
-  text-align: center;
-}
-
 .why-rationale{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -143,6 +141,28 @@ section {
 
 
 /* MEET THE TEAM */
+.people{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 75px;
+}
+
+.people li{
+  padding: 75px;
+}
+
+.people span{
+  display: block;
+  text-align: center;
+  padding: 3px;
+}
+
+.name{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
 .team-photo{
   padding: 3px;
   border: 1px solid gray;
