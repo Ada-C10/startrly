@@ -1,0 +1,191 @@
+/* ENTIRE PAGE */
+body {
+  font-family: 'Raleway', serif;
+}
+
+h2{
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.grid-container {
+  border: 1px dotted tomato;
+  display: grid;
+  grid-template-rows: repeat(11, fr);
+  grid-template-columns: 100%;
+}
+
+/* horizontal lines */
+section {
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+}
+
+/* NAVIGATION */
+
+.navigation, .footer{
+  background-color: rgba(50, 56, 56, 0.17);
+}
+
+.navigation > ul {
+  padding: 6px;
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+}
+
+.startly{
+  grid-column: 1 / 2;
+}
+
+.trynow{
+  grid-column: 2 /3;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about{
+  grid-column: 3 /4;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* INTRODUCTION */
+
+.intro{
+  text-align: center;
+  border-top: none;
+}
+
+.intro h1{
+  font-family: 'Nixie One', sans-serif;
+  font-size: 3em;
+  letter-spacing: 3px;
+}
+
+.intro sub{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  letter-spacing: 2px;
+}
+
+.action-button{
+  display: block;
+  margin: 15px auto;
+  width: 150px;
+  padding: 10px;
+  background-color: rgba(89, 75, 75, 0.56);
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.action-button:hover{
+  background-color: rgba(89, 75, 75, 0.86);
+}
+
+.intro a{
+  color: rgb(19, 21, 23);
+  text-decoration: none;
+}
+
+
+/* QUOTES */
+
+.quote blockquote:before, .quote blockquote:after{
+  content: '"';
+  font-size: 20px;
+}
+
+.quote p:before{
+  content: '--';
+  font-size: 20px;
+}
+
+.quote {
+  /* background-color: peachpuff; */
+  font-style: italic;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: serif;
+  line-height: 200%
+}
+
+.quote p {
+  /* border: dashed pink; */
+  text-align: right;
+}
+
+
+/* WHY STARTLY */
+.why-rationale{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.why-rationale img{
+  width:  100px;
+  height: 100px;
+  padding: 10px;
+}
+.why-rationale li{
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* MEET THE TEAM */
+.people{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 75px;
+}
+
+.people li{
+  padding: 75px;
+}
+
+.people span{
+  display: block;
+  text-align: center;
+  padding: 3px;
+}
+
+.name{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.team-photo{
+  padding: 3px;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+
+
+/* SPONSORS */
+
+.sponsors ul{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+/* FOOTER */
+.footer{
+  display: grid;
+  grid-template-columns: 20% auto;
+}
+
+.footer h3{
+  padding-left: 30px;
+}
