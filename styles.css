@@ -60,7 +60,7 @@ section {
 
 .intro{
   text-align: center;
-  content-align: center;
+  border-top: none;
 }
 
 .intro h1{
@@ -167,4 +167,14 @@ section {
   padding: 3px;
   border: 1px solid gray;
   border-radius: 50%;
+}
+
+
+/* SPONSORS */
+
+.sponsors ul{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
