@@ -76,12 +76,16 @@ section {
 .action-button{
   display: block;
   margin: 15px auto;
-
   width: 150px;
   padding: 10px;
-  border: 2px solid gray;
+  background-color: rgba(89, 75, 75, 0.56);
   border-radius: 10px;
   font-size: 15px;
+  font-weight: bold;
+}
+
+.action-button:hover{
+  background-color: rgba(89, 75, 75, 0.86);
 }
 
 .intro a{
