@@ -83,17 +83,22 @@ nav li:last-child {
 
 .why {
     display: flex;
+    flex-direction:row;
+    padding: none;
 
 }
 
-/* .why strong {
-   color: pink;
+.why img {
+   float: left;
 }
 
-.why li {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-}  */
+.why ul {
+  /* display: grid;
+  grid-template-rows: 1fr 1fr 1fr; */
+}
+
+.why > li > p
+
 
 .bears {
   padding-top: 8vh;
@@ -105,6 +110,7 @@ nav li:last-child {
   height: 30vh;
   justify-content: space-around;
   background-color: white;
+  flex-wrap: wrap;
 }
 
 .bears img {
