@@ -167,11 +167,18 @@ blockquote::selection {
 }
 
 .footer {
+
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  justify-content: space-between;
-  width: 30%;
+
+  /* justify-content: space-around; */
+
+}
+.footer div {
+
+  padding-right: 6rem;
+  padding-left: 6rem;
 }
 
 .footer li:hover, .footer h3:hover {
