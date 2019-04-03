@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton|Noto+Serif+KR|Black+Ops+One|Press+Start+2P|Orbitron|VT323');
+
+body {
+  font-family: font-family: 'Rasa', serif;
+}
+
+h1 {
+  font-family: 'Black Ops One', cursive;
+  color: lightblue;
+  font-size: 6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 10px;
+   overflow: hidden;
+   background-color: grey;
+   margin-top: 3vh;
+   color: white;
+}
+
+nav li {
+   float: left;
+   padding: 10px;
+   border-right: 1px solid #bbb;
+}
+
+nav li:last-child {
+  float: right;
+  border-right: none;
+}
+
+#hero-section {
+    text-align: center;
+    height: 70vh;
+    /* padding-top: 10vh; */
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#hero-section sub {
+  font-size: 27px;
+}
+
+#button {
+    background-color: grey;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 35px;
+    width: 20%;
+    align-self: center;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#button:hover {
+    background-color: orange;
+}
+
+.quote {
+    text-align: center;
+    height: 60vh;
+    padding-top: 15px;
+    background-color: grey;
+    color: white;
+    font-size: 2rem
+}
+
+.section-header {
+  text-align: center;
+  font-size: 30px;
+  flex-direction:row;
+}
+
+.why {
+    display: flex;
+    flex-direction:row;
+    padding: none;
+
+}
+
+.why img {
+   float: left;
+}
+
+.why ul {
+  /* display: grid;
+  grid-template-rows: 1fr 1fr 1fr; */
+}
+
+.why > li > p
+
+
+.bears {
+  padding-top: 8vh;
+}
+
+.bears ul {
+  display: flex;
+  padding-top: 15px;
+  height: 30vh;
+  justify-content: space-around;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+.bears img {
+  border-radius: 50%;
+}
+
+span {
+  display: block;
+}
+
+.sponsors {
+  height: 50vw;
+  padding-top: 5vh;
+}
+
+.sponsors ul {
+  padding-top: 15px;
+  align-self: auto;
+  background-color: ;
+  display: grid;
+  grid-gap: 10px;
+  grid-template: 1fr 1fr/ 1fr 1fr 1fr;
+}
+
+.sponsors img {
+    border-radius: 20px;
+  }
+
+.one {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.two {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.three {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.four {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.five
+{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.footer {
+  font-size: 1rem;
+  color: white;
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 25px;
+  padding-left: 25px:
+}
+
+.footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer div {
+  padding: 15px;
+}
